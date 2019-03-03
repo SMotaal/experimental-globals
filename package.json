@@ -1,0 +1,30 @@
+{
+	"private": true,
+	"name": "@smotaal/globals",
+	"description": "Experimental module-scoped globals",
+	"version": "0.0.0-alpha.0",
+	"author": "Saleh Abdel Motaal <saleh@grasppe.com>",
+	"repository": "https://github.com/SMotaal/experimental-globals.git",
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		"./": "./globals.js",
+		"./globals": "./lib/globals.js"
+	},
+	"types": "./globals.d.ts",
+	"scripts": {
+		"serve": "http-server --cors -s",
+		"bundle": "rollup -c rollup.config.js"
+	},
+	"devDependencies": {
+		"@types/node": "*",
+		"http-server": "*",
+		"prettier": "*",
+		"rollup": "*",
+		"typescript": "*",
+		"@smotaal/esm": "SMotaal/esm"
+	},
+	"resolutions": {
+		"SMotaal/esm": "../esm"
+	}
+}
